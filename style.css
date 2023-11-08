@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:'Courier New', Courier, monospace;
+	font-size: 48px;
+}
+
+.main-container {
+	background-image: url('pexels-antoni-shkraba-6694685.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.stopwatch-container {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	border-radius: 2rem;
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+	border: 1px solid white;
+}
+
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.counter-container {
+	flex-basis: 50%;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+.control-buttons {
+	flex-basis: 50%;
+	background-color: rgba(255,255,255, 0.5);
+	gap: 1rem;
+}
+
+.control-button {
+	width: 5rem;
+	height: 2.5rem;
+	background-color: transparent;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 1rem;
+	font-family: inherit;
+	font-size: 18px;
+	transition: 0.15s;
+}
+
+.control-button:hover {
+	border: 1px solid white;
+}
+
+.counter-container span {
+	width: 15%;
+	text-align: center;
+	margin-bottom: -8px;
+}
